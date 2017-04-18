@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/alkawryk/tinderbot"
-
-    >tinderbot (v0.8.6)</a>
+    <a href="https://github.com/alkawryk/tinderbot">tinderbot (v0.8.6)</a>
 </h1>
 <h4>A platform for developing bots that interact with the Tinder dating app</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.tinderbot">module tinderbot</a><ol>
 
@@ -122,7 +115,7 @@
   /**
    * The port on which the express server will listen on
    */
-  this.port = &#x22;8080&#x22;;
+  this.port = "8080";
 
   /**
    * The client you can use to issue requests to tinder
@@ -146,15 +139,15 @@
   };
 
   app.use(bodyParser());
-  app.set(&#x27;views&#x27;, __dirname + &#x27;/views&#x27;);
-  app.set(&#x27;view options&#x27;, { layout: false });
-  app.set(&#x27;view engine&#x27;, &#x27;jade&#x27;);
+  app.set('views', __dirname + '/views');
+  app.set('view options', { layout: false });
+  app.set('view engine', 'jade');
 
   /**
    * Renders the page for when a user has been authenticated by Facebook
    */
-  app.get(&#x27;/fbtoken&#x27;, function(req, res){
-    res.render(&#x22;auth&#x22;);
+  app.get('/fbtoken', function(req, res){
+    res.render("auth");
   });
 
   /**
@@ -162,10 +155,10 @@
    * it is not available server-side so we need to post it to the server from the browser.
    * This is the entry point for persisting that token
    */
-  app.post(&#x27;/fbtoken&#x27;, function(req, res){
+  app.post('/fbtoken', function(req, res){
     var hash = req.body.hash;
-    var tokenField = &#x22;access_token=&#x22;;
-    var expiresField = &#x22;&#x26;expires_in=&#x22;;
+    var tokenField = "access_token=";
+    var expiresField = "&amp;expires_in=";
     var access_token = hash.substring(hash.indexOf(tokenField) + tokenField.length, hash.indexOf(expiresField));
     var expiryInSeconds = hash.substring(hash.indexOf(expiresField) + expiresField.length);
 
@@ -173,19 +166,19 @@
 
     // Once we have the Facebook access token, we need the user ID associated with the token.
     request({
-      url: &#x27;https://graph.facebook.com/debug_token?input_token=&#x27; + access_token + &#x27;&#x26;access_token=&#x27; + _this.FBClientId + &#x27;|&#x27; + _this
+      url: 'https://graph.facebook.com/debug_token?input_token=' + access_token + '&amp;access_token=' + _this.FBClientId + '|' + _this
 .FBClientSecret,
-      method: &#x27;GET&#x27;
+      method: 'GET'
     }, function(err, response, body){
 
       if (err) {
-        throw new &#x22;Failed to get user id: &#x22; + err;
+        throw new "Failed to get user id: " + err;
       } else {
 
         body = JSON.parse(body);
 
         if (!body.data.user_id) {
-          throw new &#x22;Failed to get user id.&#x22;;
+          throw new "Failed to get user id.";
         }
 
         // Once we have the Facebook access token and user id, we can use it to authorize our bot
@@ -193,14 +186,14 @@
         _this.client.authorize(access_token, body.data.user_id, function(){
 
           var timer = setInterval(function(){
-            if (new Date().getTime() &#x3e;= fbTokenExpiresIn.getTime()) {
+            if (new Date().getTime() &gt;= fbTokenExpiresIn.getTime()) {
 
               clearInterval(timer);
 
               // Have the client refresh their screen to obtain
               // a new Facebook client token
               res.json({
-                redirect: &#x27;/login&#x27;
+                redirect: '/login'
               });
 
             } else {
@@ -220,9 +213,9 @@
    * Entry point for getting the Facebook access token. This will bring you to a Facebook auth
    * dialogue and eventually grant your access token
    */
-  app.get(&#x27;/login&#x27;, function(req, res){
-    res.redirect(&#x27;https://www.facebook.com/dialog/oauth?client_id=&#x27; + _this.FBClientId + &#x27;&#x26;response_type=token&#x26;redirect_uri=http
-://localhost:&#x27; + _this.port + &#x27;/fbtoken&#x27;);
+  app.get('/login', function(req, res){
+    res.redirect('https://www.facebook.com/dialog/oauth?client_id=' + _this.FBClientId + '&amp;response_type=token&amp;redirect_uri=http
+://localhost:' + _this.port + '/fbtoken');
   });
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
@@ -237,3 +230,4 @@
     ]
 </div>
 </div>
+</body></html>
