@@ -1,9 +1,14 @@
-# api documentation for  [tinderbot (v0.8.6)](https://github.com/alkawryk/tinderbot)  [![npm package](https://img.shields.io/npm/v/npmdoc-tinderbot.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-tinderbot) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-tinderbot.svg)](https://travis-ci.org/npmdoc/node-npmdoc-tinderbot)
+# npmdoc-tinderbot
+
+#### api documentation for  [tinderbot (v0.8.6)](https://github.com/alkawryk/tinderbot)  [![npm package](https://img.shields.io/npm/v/npmdoc-tinderbot.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-tinderbot) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-tinderbot.svg)](https://travis-ci.org/npmdoc/node-npmdoc-tinderbot)
+
 #### A platform for developing bots that interact with the Tinder dating app
 
-[![NPM](https://nodei.co/npm/tinderbot.png?downloads=true)](https://www.npmjs.com/package/tinderbot)
+[![NPM](https://nodei.co/npm/tinderbot.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/tinderbot)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-tinderbot/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-tinderbot_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-tinderbot/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-tinderbot/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-tinderbot/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-tinderbot/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-tinderbot/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-tinderbot/build/screenCapture.npmPackageListing.svg)
 
@@ -40,13 +45,11 @@
     "main": "tinderbot.js",
     "maintainers": [
         {
-            "name": "alkawryk",
-            "email": "azzro.boy@gmail.com"
+            "name": "alkawryk"
         }
     ],
     "name": "tinderbot",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/alkawryk/tinderbot.git"
@@ -57,16 +60,6 @@
     "version": "0.8.6"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module tinderbot](#apidoc.module.tinderbot)
-
-
-
-# <a name="apidoc.module.tinderbot"></a>[module tinderbot](#apidoc.module.tinderbot)
 
 
 
