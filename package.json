@@ -1,7 +1,7 @@
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
     "buildNpmdoc": "tinderbot",
-    "description": "#### api documentation for  [tinderbot (v0.8.6)](https://github.com/alkawryk/tinderbot)  [![npm package](https://img.shields.io/npm/v/npmdoc-tinderbot.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-tinderbot) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-tinderbot.svg)](https://travis-ci.org/npmdoc/node-npmdoc-tinderbot)",
+    "description": "#### basic api documentation for  [tinderbot (v0.8.6)](https://github.com/alkawryk/tinderbot)  [![npm package](https://img.shields.io/npm/v/npmdoc-tinderbot.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-tinderbot) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-tinderbot.svg)](https://travis-ci.org/npmdoc/node-npmdoc-tinderbot)",
     "devDependencies": {
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "tinderbot": "*",

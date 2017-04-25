@@ -1,6 +1,6 @@
 # npmdoc-tinderbot
 
-#### api documentation for  [tinderbot (v0.8.6)](https://github.com/alkawryk/tinderbot)  [![npm package](https://img.shields.io/npm/v/npmdoc-tinderbot.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-tinderbot) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-tinderbot.svg)](https://travis-ci.org/npmdoc/node-npmdoc-tinderbot)
+#### basic api documentation for  [tinderbot (v0.8.6)](https://github.com/alkawryk/tinderbot)  [![npm package](https://img.shields.io/npm/v/npmdoc-tinderbot.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-tinderbot) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-tinderbot.svg)](https://travis-ci.org/npmdoc/node-npmdoc-tinderbot)
 
 #### A platform for developing bots that interact with the Tinder dating app
 
@@ -57,7 +57,8 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "version": "0.8.6"
+    "version": "0.8.6",
+    "bin": {}
 }
 ```
 
